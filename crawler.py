@@ -21,7 +21,7 @@ class crawler:
     return self.__information
   def get_forumList(self):
     forumList=[]
-    with open("forum.csv","r",encoding="utf-8") as f:
+    with open("forum.csv","r",encoding="utf-8-sig") as f:
       for line in f.readlines():
         if line=="\n":
           continue
