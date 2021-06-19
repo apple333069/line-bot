@@ -28,7 +28,7 @@ class crawler:
   def __close(self):
     sl(0.5)
     self.__driver.close()
-  def crawl_specific_form(self,name):
+  def crawl_specific_forum(self,name):
     forumList=self.get_forumList()
     for i in forumList:
       if i.split(",")[0] in name:

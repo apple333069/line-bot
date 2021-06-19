@@ -40,7 +40,7 @@ def handle_message(event):
         result=DcardCrawler.information
     else:
         DcardCrawler=crawler()
-        result=DcardCrawler.crawl_specific_form(event.message.text)
+        result=DcardCrawler.crawl_specific_forum(event.message.text)
     message=TextSendMessage(text=result)
     line_bot_api.reply_message(event.reply_token, message)
 
